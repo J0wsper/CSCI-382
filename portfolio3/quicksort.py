@@ -1,7 +1,7 @@
 #Quick sort! Takes an array along with the lower and upper indicies within said array that need to be
 #sorted. The first call will be the first and last indicies of the array, and after that quicksort recursively
 #calls itself to sort its subarrays after a pivot element has been selected.
-def quick_sort(arr, low, high):
+def quicksort(arr, low, high):
     if high <= low:
         return
     pivot = partition(arr, low, high)
