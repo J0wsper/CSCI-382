@@ -1,7 +1,7 @@
 #Selection sort! Scans through an array and at each element, scans the array again to see which of
 #the unsorted elements is smallest. Then, swaps the current element with the minimum element and iterates
 #the outer loop.
-def selection_sort(arr):
+def selectionsort(arr):
     i = 0
 
     #Outer scan; loops through all the elements of the array.
