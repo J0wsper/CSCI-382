@@ -2,7 +2,7 @@
 #the subarray given by low and high and then recursively mergesorts the left and right subarrays. Once
 #this has been completed, it then calls merge, a helper function that takes two sorted subarrays of
 #arr, partitioned by low, mid and high, and then combines them in the correct order. 
-def merge_sort(arr, low, high):
+def mergesort(arr, low, high):
     if low >= high:
         return
     
