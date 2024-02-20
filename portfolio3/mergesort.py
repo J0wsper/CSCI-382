@@ -10,8 +10,8 @@ def mergesort(arr, low, high):
     mid = (high+low)//2
 
     #Recursive calls
-    merge_sort(arr, low, mid)
-    merge_sort(arr, mid+1, high)
+    mergesort(arr, low, mid)
+    mergesort(arr, mid+1, high)
 
     #Merges the two sorted halves of the array into a sorted whole.
     merge(arr, low, mid, high)
