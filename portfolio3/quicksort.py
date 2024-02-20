@@ -5,8 +5,8 @@ def quicksort(arr, low, high):
     if high <= low:
         return
     pivot = partition(arr, low, high)
-    quick_sort(arr, low, pivot-1)
-    quick_sort(arr, pivot+1, high)
+    quicksort(arr, low, pivot-1)
+    quicksort(arr, pivot+1, high)
 
 #Partitions the passed array into two subarrays; everything greater than or equal to the pivot is placed
 #to the pivot's right, while everything less than the pivot is maintained. The index of the pivot is
