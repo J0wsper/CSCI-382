@@ -130,7 +130,6 @@ def runner(sort, sort_str, trials, size, timer):
     j = 0
     while j < trials:
         arr = inputGenerator(size)
-        #For some reason this will output that no time has passed between the runs?
         start = time.perf_counter()
         sort(arr)
         end = time.perf_counter()
@@ -150,12 +149,10 @@ def driver():
                 runner(mergesort,'mergesort',args.numTrials,size,timer)
                 result = timer.calc('mergesort',size)
                 timer.results_append('mergesort',size,result)
-            #I suspect there's a bug in my quicksort implementation; it behaves very strangely
             elif i == 'quicksort':
                 runner(quicksort,'quicksort',args.numTrials,size,timer)
                 result = timer.calc('quicksort',size)
                 timer.results_append('quicksort',size,result)
-            #Selection sort? Kinda balls!
             elif i == 'selectionsort':
                 runner(selectionsort,'selectionsort',args.numTrials,size,timer)
                 result = timer.calc('selectionsort',size)
